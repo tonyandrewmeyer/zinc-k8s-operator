@@ -31,6 +31,8 @@ jobs:
 
   lib-check:
     name: Check libraries
+    # Disabled on this fork: it needs CHARMHUB_TOKEN, which a fork does not have.
+    if: false
     runs-on: ubuntu-24.04
     steps:
       - name: Checkout
